@@ -205,7 +205,6 @@ class GradLogPEstimator2d(BaseModule):
 
         print("mu shape: ", mu.shape)
         print("x shape:", x.shape)
-        print([mu, x, s].shape)
         if self.n_spks < 2:
             x = torch.stack([mu, x], 1)
         else:
